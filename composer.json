@@ -11,13 +11,22 @@
             "email": "contact@jubianchi.fr"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jubianchi/atoum"
+        }
+    ],
     "require-dev": {
-        "atoum/atoum": "<3.0"
+        "atoum/atoum": "dev-runner-auto-conf@dev"
     },
     "autoload": {
         "psr-4": {
             "mageekguy\\atoum\\visibility\\": "classes"
         },
-        "files": ["autoloader.php"]
+        "files": [
+            "autoloader.php",
+            "configuration.php"
+        ]
     }
 }
